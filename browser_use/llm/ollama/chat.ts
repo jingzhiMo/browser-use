@@ -233,7 +233,7 @@ export class ChatOllama implements BaseChatModel {
 	/**
 	 * Main implementation of ainvoke
 	 */
-	async ainvoke<T extends BaseModel>(
+	async ainvoke<T extends BaseModel = BaseModel>(
 		messages: BaseMessage[],
 		output_format?: BaseModelConstructor<T> | null,
 		...kwargs: any[]
